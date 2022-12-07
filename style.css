@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+header, footer {
+  height: 20px;
+  padding: 20px;
+  background-color: pink;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+}
+
+.add_button {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: large;
+  font-weight: bold;
+  background-color: white;
+}
+
+.shopping_list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+input {
+  border: none;
+}
