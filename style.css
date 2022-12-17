@@ -8,7 +8,7 @@ ul {
   list-style: none;
 }
 
-body{
+body {
   background-color: #ced3df;
   text-align: center;
 }
@@ -17,6 +17,10 @@ button {
   border: none;
   cursor: pointer;
   background-color: transparent;
+}
+
+form {
+  width: 100%;
 }
 
 .list {
@@ -31,7 +35,11 @@ header {
   padding: 8px;
   font-size: 24px;
   background: rgb(239, 204, 224);
-  background: linear-gradient(90deg, rgba(239, 204, 224, 1) 50%, rgba(114, 152, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 204, 224, 1) 50%,
+    rgba(114, 152, 255, 1) 100%
+  );
   border-radius: 20px 20px 0 0;
   color: white;
 }
@@ -71,7 +79,11 @@ footer {
   display: flex;
   flex-direction: column;
   background: rgb(239, 204, 224);
-  background: linear-gradient(90deg, rgba(239, 204, 224, 1) 50%, rgba(114, 152, 255, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    rgba(239, 204, 224, 1) 50%,
+    rgba(114, 152, 255, 1) 100%
+  );
   border-radius: 0 0 20px 20px;
   align-items: center;
 }

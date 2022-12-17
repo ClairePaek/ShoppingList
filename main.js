@@ -1,7 +1,13 @@
 const addBtn = document.querySelector('.footer__button');
 const input = document.querySelector('.footer__input');
+const form = document.querySelector('.new-form');
 const items = document.querySelector('.items');
 let id = 0;
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  onAdd();
+});
 
 /**
  * 아이템을 추가합니다.
@@ -21,16 +27,6 @@ function onAdd() {
   input.value = '';
   input.focus();
 }
-
-addBtn.addEventListener('click', () => {
-  onAdd();
-});
-
-input.addEventListener('keypress', (event) => {
-  if (event.key == 'Enter') {
-    onAdd();
-  }
-});
 
 items.addEventListener('click', (event) => {
   const id = event.target.dataset.id;
